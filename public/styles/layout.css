@@ -8,6 +8,9 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  /* border-bottom: 10px; */
+  /* border: 20px; */
+  /* text-decoration-line: underline; */
 }
 
 /*
@@ -18,8 +21,17 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.container{
+	margin: auto;
+	padding: 1em;
+	padding-top: 140px;
+	width: 450px;
+	background-color: white;
+	/* padding: 5px; */
+}
