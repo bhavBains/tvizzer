@@ -27,11 +27,44 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.container{
-	margin: auto;
-	padding: 1em;
-	padding-top: 140px;
-	width: 450px;
+.container {
 	background-color: white;
+  margin: auto;
+  padding: 1em;
+  padding-top: 140px;
+  width: 450px;
 	/* padding: 5px; */
 }
+/*Tweets Blog Section*/
+.recent-tweets article {
+  background-color: #eee;
+  border-radius: 10px;  
+  margin: 0 2em;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.recent-tweets article:hover {
+  box-shadow: 5px 5px 10px 5px #848080;
+}
+/*Header of tweet blog*/
+.recent-tweets header {
+  font-weight: bolder;
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  flex: auto;
+}
+/*Main body of Tweet Blog*/
+.recent-tweets-body {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+/*Footer of tweet blog*/
+.recent-tweets footer {
+  /* font-weight: bolder; */
+  height: 30px;
+  padding: 10px;
+}
+  

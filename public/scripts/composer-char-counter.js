@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('#tweet-textarea').on('keyup', characterCount);
-  $('#tweet-textarea').on('paste', characterCount);   
+  //$('#tweet-textarea').on('paste', characterCount); //doesnt need anymore  
 })  
 
 //To count Character of the tweet
