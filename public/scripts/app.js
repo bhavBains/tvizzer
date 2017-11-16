@@ -47,11 +47,18 @@ $(document).on("ready", function() {
       $.post("/tweets/", $(this).serialize(), (data) => {
         $('#tweet-textarea').val("");
         $(".recent-tweets").html("");
+        $(".new-tweet").slideUp();
         loadTweets();
       })
     } else {
       alert("empty string or maximum number of characters reached");
     } 
+  });
+
+  //Compose button at the top
+  $("#nav-bar button").on("click", function() {
+    $(".new-tweet").slideDown();
+    $("#tweet-textarea").focus();
   });
 
 });

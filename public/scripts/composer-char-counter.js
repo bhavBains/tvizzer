@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 //To count Character of the tweet
 function characterCount(){
-  var counter = $(this).parents(".container").find(".counter")
+  var counter = $(this).parents(".container").find(".counter");
   var length = $(this).val().length;
   var maxValue = 140;
   if (length >= 140) {
