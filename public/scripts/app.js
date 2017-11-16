@@ -6,11 +6,12 @@
 
 $(document).on("ready", function() {
   function createTweetElement(tweet) {
+    //To make article of posted tweets
     var tweetBody =     tweet.content.text,
         tweetUserName = tweet.user.name,
         tweetAvatar =   tweet.user.avatars.small,
         tweetHandler =  tweet.user.handle,
-        tweetFooter =   tweet.created_at;
+        tweetFooter =   new Date(tweet.created_at);
 
     const $tweet = 
       `<article>
@@ -25,25 +26,32 @@ $(document).on("ready", function() {
   }
 
   function renderTweets(tweets) {
+    //To loop through every posted tweet database
     tweets.forEach ((tweet) =>{
-        $(".recent-tweets").append(createTweetElement(tweet));
+        $(".recent-tweets").prepend(createTweetElement(tweet));
     })
   }
 
-  //renderTweets(data);
-
   function loadTweets() {
+    //GET request to database
     $.get("/tweets/",function(data) {
       return renderTweets(data);
     }) 
   }
   loadTweets();
 
+  //Post request on submit button
   $("form").on("submit", function(event) {
     event.preventDefault();
-    $.post("/tweets/", $(this).serialize(), (data) => {
-      console.log("data: " + data);
-    })
-
+    if ($('#tweet-textarea').val().length !== 0 && $('#tweet-textarea').val().length < 140) {
+      $.post("/tweets/", $(this).serialize(), (data) => {
+        $('#tweet-textarea').val("");
+        $(".recent-tweets").html("");
+        loadTweets();
+      })
+    } else {
+      alert("empty string or maximum number of characters reached");
+    } 
   });
+
 });
