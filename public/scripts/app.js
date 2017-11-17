@@ -5,7 +5,7 @@ $(document).on("ready", function() {
         tweetUserName = tweet.user.name,
         tweetAvatar =   tweet.user.avatars.small,
         tweetHandler =  tweet.user.handle,
-        tweetFooter =   new Date(tweet.created_at);
+        tweetFooter =   moment(tweet.created_at).fromNow();
 
     const $tweet = 
       `<article>
