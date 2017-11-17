@@ -1,10 +1,10 @@
 .container .new-tweet{
 	background-color: #eee;
-	margin: 0 2em;
-	padding: 10px;
 	border-radius: 10px;
 	box-shadow: .5px .5px 1px 1px #848080;
 	display: none;
+	margin: 0 2em;
+	padding: 10px;
 }
 
 .container textarea{

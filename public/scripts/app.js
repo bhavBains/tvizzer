@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).on("ready", function() {
   function createTweetElement(tweet) {
     //To make article of posted tweets
@@ -15,7 +9,7 @@ $(document).on("ready", function() {
 
     const $tweet = 
       `<article>
-      <header><img src="${tweetAvatar}">${tweetUserName}<p class="userId">${tweetHandler}</p></header>
+      <header><div id= "header"><img id="tweetAvatar" src="${tweetAvatar}"><div class="tweetUserName">${tweetUserName}</div></div><p class="userId">${tweetHandler}</p></header>
       <div class="recent-tweets-body">
         <p class="">${tweetBody}</p>
       </div>
@@ -60,5 +54,7 @@ $(document).on("ready", function() {
     $(".new-tweet").slideDown();
     $("#tweet-textarea").focus();
   });
+
+  $(".recent-tweets footer").moment().format("dddd");
 
 });

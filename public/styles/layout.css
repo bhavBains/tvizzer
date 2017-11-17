@@ -11,6 +11,7 @@ html {
   /* border-bottom: 10px; */
   /* border: 20px; */
   /* text-decoration-line: underline; */
+  /* display: flex; */
 }
 
 /*
@@ -52,8 +53,10 @@ body {
   font-weight: bolder;
   display: flex;
   height: 50px;
-  padding: 10px;
-  flex: auto;
+  /* padding: 10px; */
+  /* flex: auto; */
+  justify-content: space-between;
+  align-items: unsafe;
 }
 /*Main body of Tweet Blog*/
 .recent-tweets-body {
@@ -68,3 +71,14 @@ body {
   padding: 10px;
 }
   
+#header {
+  display: inherit;
+}
+
+.tweetUserName {
+  margin-left: 10px;
+}
+
+.userId {
+  margin-top: inherit;
+}
