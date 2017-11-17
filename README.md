@@ -12,16 +12,16 @@ A single page app (SPA) built with HTML, CSS, JS, jQuery and AJAX front-end skil
 
 ## Dependencies
 
--body-parser: ^1.18.2
--chance: ^1.0.12
--express: ^4.16.2
--md5: ^2.2.1
--mongodb: ^2.2.33
+	-body-parser: 1.18.2
+	-chance: 1.0.12
+	-express: 4.16.2
+	-md5: 2.2.1
+	-mongodb: 2.2.33
  
 ## devDependencies
--nodemon: ^1.9.2
+	-nodemon: 1.9.2
 
 ## Expected Functionality
--Primarily a client-side Single Page App (SPA)
--The client-side app communicates with a server via AJAX
--Tweets are persisted to MongoDB and survive server restart
+	-Primarily a client-side Single Page App (SPA)
+	-The client-side app communicates with a server via AJAX
+	-Tweets are persisted to MongoDB and survive server restart
