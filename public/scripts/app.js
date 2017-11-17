@@ -55,6 +55,7 @@ $(document).on("ready", function() {
     $("#tweet-textarea").focus();
   });
 
-  $(".recent-tweets footer").moment().format("dddd");
+  // var footer = $(".recent-tweets").find("footer");
+  // footer.timeago();
 
 });
