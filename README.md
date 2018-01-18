@@ -1,6 +1,6 @@
-# Tweeter Project
+# Tvizzer
 
-Tweeter is a simple, single-page Twitter clone.
+Tvizzer is a simple, single-page Twitter clone.
 
 A single page app (SPA) built with HTML, CSS, JS, jQuery and AJAX front-end skills, and used Node, Express and MongoDB for server side/back-end.
 
